@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Овощной салат</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-orange-50 to-yellow-50 text-gray-800">
+
+<!-- Header -->
+<header class="flex justify-between items-center p-6 bg-white shadow-md">
+  <a href="/cookingdish.github.io">
+    <h1 class="text-2xl font-bold text-orange-600">Вкусно. Просто. Твое.</h1>
+  </a>
+  <a href="/cookingdish.github.io/login">
+    <button class="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-4 rounded-full transition">
+      Log In
+    </button>
+  </a>
+</header>
+
+<!-- Main Recipe -->
+<main class="max-w-4xl mx-auto px-6 py-12">
+  <h1 class="text-4xl font-extrabold text-orange-700 mb-4">Овощной салат</h1>
+
+  <!-- Image -->
+  <img src="static/vegetable-salad.png" alt="Овощной салат"
+       class="rounded-xl shadow-md mb-6 w-full object-cover max-h-[400px]" />
+
+  <!-- Meta info -->
+  <div class="flex items-center space-x-6 text-sm text-gray-600 mb-6">
+    <div class="flex items-center gap-1">
+      <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+                                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <span>15 минут</span>
+    </div>
+    <div class="flex items-center gap-1">
+      <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+                                     d="M20 13V7a2 2 0 00-2-2h-5V3H9v2H4a2 2 0 00-2 2v6m18 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <span>120 ккал</span>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <p class="text-lg mb-6">
+    Легкий и освежающий овощной салат — идеальный вариант для перекуса или гарнира. Быстро готовится и полон витаминов!
+  </p>
+
+  <!-- Ingredients -->
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold text-orange-600 mb-3">Ингредиенты</h2>
+    <ul class="list-disc list-inside space-y-1">
+      <li>1 огурец</li>
+      <li>2 помидора</li>
+      <li>1 сладкий перец</li>
+      <li>1/2 красного лука</li>
+      <li>2 ст. л. оливкового масла</li>
+      <li>1 ч. л. лимонного сока</li>
+      <li>Соль и перец по вкусу</li>
+      <li>Свежая зелень (петрушка, укроп)</li>
+    </ul>
+  </section>
+
+  <!-- Steps -->
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold text-orange-600 mb-3">Приготовление</h2>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Овощи вымыть и обсушить.</li>
+      <li>Нарезать огурец, помидоры, перец и лук.</li>
+      <li>Сложить все в миску, добавить зелень.</li>
+      <li>Заправить оливковым маслом и лимонным соком.</li>
+      <li>Посолить, поперчить и перемешать.</li>
+    </ol>
+  </section>
+
+  <!-- Similar Recipes -->
+  <section class="mb-12">
+    <h2 class="text-2xl font-semibold text-orange-600 mb-4">Похожие рецепты</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="#" class="bg-white rounded-lg shadow hover:shadow-md transition p-4">
+        <img src="static/greek-salad.png" class="rounded-md mb-2 object-cover h-40" />
+        <h3 class="text-lg font-semibold text-orange-700">Греческий салат</h3>
+      </a>
+      <a href="#" class="bg-white rounded-lg shadow hover:shadow-md transition p-4">
+        <img src="static/cabbage-salad.png" class="rounded-md mb-2 object-cover h-40" />
+        <h3 class="text-lg font-semibold text-orange-700">Салат из капусты</h3>
+      </a>
+      <a href="#" class="bg-white rounded-lg shadow hover:shadow-md transition p-4">
+        <img src="static/beet-salad.png" class="rounded-md mb-2 object-cover h-40" />
+        <h3 class="text-lg font-semibold text-orange-700">Свекольный салат</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- Comments -->
+  <section>
+    <h2 class="text-2xl font-semibold text-orange-600 mb-4">Комментарии</h2>
+
+    <!-- Leave comment -->
+    <form class="mb-6">
+        <textarea rows="3" placeholder="Оставьте комментарий..."
+                  class="w-full p-3 border border-orange-300 rounded-md focus:ring-2 focus:ring-orange-500 resize-none mb-2"></textarea>
+      <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">
+        Отправить
+      </button>
+    </form>
+
+    <!-- Comment List -->
+    <div class="space-y-4">
+      <div class="bg-white p-4 rounded-lg shadow">
+        <p class="font-semibold text-orange-700">Алексей:</p>
+        <p class="text-sm mt-1">Очень освежающий салат! Добавил немного феты — получилось супер.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <p class="font-semibold text-orange-700">Наташа:</p>
+        <p class="text-sm mt-1">Простой и вкусный рецепт. Спасибо!</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
